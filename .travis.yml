@@ -11,8 +11,7 @@ go:
     - 1.6.x
 
 script:
-    - pwd
-    - ls
+    - cp -a vendor ../../../../
     - make
     - make gotest
 
