@@ -11,8 +11,7 @@ go:
     - 1.6.x
 
 script:
-    - cp -a vendor ${GOPATH}
-    - ls -l ${GOPATH}/vendor
+    - cp -a pkg/* ${GOPATH}/src
     - make codis-dashboard
     - make gotest
 
