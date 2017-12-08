@@ -11,6 +11,8 @@ go:
     - 1.6.x
 
 script:
+    - pwd
+    - ls
     - make
     - make gotest
 
