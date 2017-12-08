@@ -29,7 +29,7 @@ deploy:
         - ${DEPLOY_TARGET}.tar.gz
     skip_cleanup: true
     on:
-        repo: shanhuhai5739/codis
+        repo: CodisLabs/codis
         tags: true
         condition: $TRAVIS_GO_VERSION =~ ^1\.[7-9]\.[0-9]+$
 branches:
