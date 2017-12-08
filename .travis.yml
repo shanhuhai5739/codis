@@ -11,8 +11,9 @@ go:
     - 1.6.x
 
 script:
-    - cp -a vendor ../../../../
-    - make
+    - cp -a vendor ${GOPATH}
+    - ls -l ${GOPATH}/vendor
+    - make codis-dashboard
     - make gotest
 
 before_deploy:
