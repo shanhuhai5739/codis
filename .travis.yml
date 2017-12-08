@@ -13,6 +13,7 @@ go:
 script:
     - mkdir -p ${GOPATH}/src/github.com/CodisLabs/codis
     - cp -a pkg ${GOPATH}/src/github.com/CodisLabs/codis
+    - cp -a vendor ${GOPATH}
     - make codis-dashboard
     - make gotest
 
